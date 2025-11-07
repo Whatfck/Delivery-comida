@@ -7,8 +7,8 @@ import { OrderStatus } from '../components/orders/OrderStatus';
 import { NotificationPanel } from '../components/notifications/NotificationPanel';
 import { useNotifications } from '../hooks/useNotifications';
 import apiService from '../services/api';
-import type { Product, Extra, ProductWithExtras, Customer, Order } from '../types';
-import { UserRole } from '../types';
+import type { Product, Extra, ProductWithExtras, Customer, Order } from '../../types';
+import { UserRole } from '../../types';
 
 type ViewStep = 'menu' | 'customer-info' | 'summary' | 'order-placed';
 

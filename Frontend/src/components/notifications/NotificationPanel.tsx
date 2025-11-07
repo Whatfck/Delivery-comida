@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { Notification } from '../types';
+import type { Notification } from '../../types';
 
 interface NotificationPanelProps {
   notifications: Notification[];

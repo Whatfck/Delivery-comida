@@ -4,8 +4,8 @@ import { OrderStatus as OrderStatusComponent } from '../components/orders/OrderS
 import { NotificationPanel } from '../components/notifications/NotificationPanel';
 import { useNotifications } from '../hooks/useNotifications';
 import apiService from '../services/api';
-import type { Order } from '../types';
-import { OrderStatus, UserRole } from '../types';
+import type { Order } from '../../types';
+import { OrderStatus, UserRole } from '../../types';
 
 export const RestaurantView: React.FC = () => {
   const [orders, setOrders] = useState<Order[]>([]);
