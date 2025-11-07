@@ -40,6 +40,22 @@ Este documento describe los requerimientos para un sistema de delivery de comida
 
 **Como** administrador, **quiero** ver el promedio por pedido para analizar el ticket promedio.
 
+## Stack Tecnológico
+
+### Backend (Java)
+- **Lenguaje**: Java 11 o superior
+- **Framework**: Spring Boot (para facilitar la estructura y CLI)
+- **Build Tool**: Maven
+- **Dependencias principales**:
+  - Spring Boot Starter (para CLI)
+  - No se requieren bases de datos externas (datos en memoria)
+- **IDE recomendado**: IntelliJ IDEA o VS Code con extensiones Java
+
+### Frontend
+- **Framework**: React con TypeScript
+- **Styling**: Tailwind CSS
+- **Estado**: Para el MVP se utilizará interfaz de consola. El frontend web será para futuras iteraciones.
+
 ## Requerimientos No Funcionales
 - **Lenguaje**: Java
 - **Interfaz**: Consola de comandos (CLI)
