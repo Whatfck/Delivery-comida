@@ -41,12 +41,77 @@ Sistema de delivery de comida implementado como Minimum Viable Product (MVP) en 
 2. Ejecutar `mvn clean install`
 3. Ejecutar `mvn spring-boot:run`
 
-## Uso
-El sistema se ejecuta desde la consola con comandos interactivos para:
-- Crear pedidos
-- Personalizar productos
-- Gestionar estados
-- Ver estadísticas
+## Cómo Usar
+
+### Inicio de Sesión
+Primero debes iniciar sesión en el sistema:
+
+```bash
+# Comando para login
+login
+
+# Credenciales de prueba disponibles:
+# Usuario: admin, Contraseña: admin123
+# Usuario: juan, Contraseña: juan123
+# Usuario: maria, Contraseña: maria123
+```
+
+### Comandos Disponibles
+
+#### Gestión de Sesión
+- `login` - Iniciar sesión en el sistema
+- `logout` - Cerrar sesión actual
+- `usuario-actual` - Ver usuario actualmente logueado
+
+#### Gestión de Pedidos
+- `crear-pedido` - Crear un nuevo pedido (requiere login)
+  - Seleccionar restaurante de la lista
+  - Elegir productos del menú
+  - Personalizar con extras (queso, carne, vegetales, salsa)
+  - Confirmar pedido
+
+#### Estadísticas
+- `estadisticas` - Ver estadísticas del sistema
+  - Total de pedidos completados
+  - Ingresos totales
+  - Promedio por pedido
+
+#### Sistema
+- `help` - Ver lista de comandos disponibles
+- `salir` - Salir de la aplicación
+
+### Flujo de Uso Típico
+
+```bash
+# 1. Iniciar la aplicación
+mvn spring-boot:run
+
+# 2. Hacer login (requerido)
+login
+# Usuario: admin
+# Contraseña: admin123
+
+# 3. Crear un pedido
+crear-pedido
+# - Seleccionar restaurante (1-3)
+# - Elegir productos (1-3) o ver resumen (4)
+# - Personalizar productos (1-5)
+# - El sistema simulará automáticamente los cambios de estado
+
+# 4. Ver estadísticas
+estadisticas
+
+# 5. Cerrar sesión
+logout
+
+# 6. Salir
+salir
+```
+
+### Datos de Prueba
+- **Restaurantes**: Pizza Palace, Burger King, Green Salad
+- **Productos**: Hamburguesa ($8.00), Pizza ($12.00), Ensalada ($6.00)
+- **Extras**: Queso (+$2.50), Carne (+$4.00), Vegetales (+$1.50), Salsa (+$1.00)
 
 ## Arquitectura
 - **Cliente**: Representa al usuario que hace pedidos
