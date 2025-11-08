@@ -1,6 +1,6 @@
 import React from 'react';
-import type { Statistics } from '../../types';
-import { OrderStatus } from '../../types';
+import type { Statistics } from '../../../types';
+import { OrderStatus } from '../../../types';
 
 interface StatsDashboardProps {
   statistics: Statistics;

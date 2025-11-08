@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ExtrasList } from './ExtrasList';
-import type { Product, Extra, ProductWithExtras } from '../../types';
+import type { Product, Extra, ProductWithExtras } from '../../../types';
 
 interface ProductCustomizerProps {
   product: Product;

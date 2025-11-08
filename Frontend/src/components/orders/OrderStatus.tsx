@@ -1,6 +1,6 @@
 import React from 'react';
-import { OrderStatus as OrderStatusEnum } from '../../types';
-import type { Order } from '../../types';
+import { OrderStatus as OrderStatusEnum } from '../../../types';
+import type { Order } from '../../../types';
 
 interface OrderStatusProps {
   order: Order;

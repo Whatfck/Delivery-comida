@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { Customer } from '../../types';
+import type { Customer } from '../../../types';
 
 interface OrderFormProps {
   onSubmit: (customer: Customer, notes: string) => void;

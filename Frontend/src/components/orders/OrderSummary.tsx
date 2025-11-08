@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ProductWithExtras, Customer } from '../../types';
+import type { ProductWithExtras, Customer } from '../../../types';
 
 interface OrderSummaryProps {
   items: ProductWithExtras[];

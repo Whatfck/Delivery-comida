@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Extra } from '../../types';
+import type { Extra } from '../../../types';
 
 interface ExtrasListProps {
   extras: Extra[];

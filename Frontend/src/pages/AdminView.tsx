@@ -5,8 +5,8 @@ import { StatsDashboard } from '../components/statistics/StatsDashboard';
 import { NotificationPanel } from '../components/notifications/NotificationPanel';
 import { useNotifications } from '../hooks/useNotifications';
 import apiService from '../services/api';
-import type { Order, Statistics } from '../../types';
-import { OrderStatus, UserRole } from '../../types';
+import type { Order, Statistics } from '../../../types';
+import { OrderStatus, UserRole } from '../../../types';
 
 type ViewMode = 'dashboard' | 'orders' | 'order-detail';
 
